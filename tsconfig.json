@@ -1,0 +1,22 @@
+{
+	"extends": "@marais/tsconfig",
+	"compilerOptions": {
+		"strict": true,
+		"noEmit": true,
+		"allowJs": true,
+		"checkJs": true,
+		"skipLibCheck": true,
+		"baseUrl": "./src",
+		"outDir": "dist",
+		"target": "esnext",
+		"declaration": false,
+		"removeComments": false,
+		"lib": ["esnext", "dom.iterable", "webworker"],
+		"types": ["@cloudflare/workers-types"],
+		"paths": {
+			"workers-logger": ["./index.ts"]
+		}
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
+}

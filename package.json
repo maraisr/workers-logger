@@ -1,0 +1,73 @@
+{
+	"name": "workers-logger",
+	"version": "0.0.2",
+	"description": "A fast and effective logging framework for Cloudflare Workers",
+	"keywords": [
+		"logging",
+		"tracing",
+		"workers"
+	],
+	"repository": "maraisr/workers-logger",
+	"license": "MIT",
+	"author": {
+		"name": "Marais Rossouw",
+		"email": "me@marais.dev",
+		"url": "https://marais.io"
+	},
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"import": "./index.mjs",
+			"require": "./index.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"main": "index.js",
+	"module": "index.mjs",
+	"types": "types/index.d.ts",
+	"files": [
+		"types"
+	],
+	"scripts": {
+		"build:cjs": "esbuild src/index.ts --platform=neutral --main-fields=workers --format=cjs --outfile=index.js",
+		"build:esm": "esbuild src/index.ts --platform=neutral --main-fields=workers --format=esm --outfile=index.mjs",
+		"build:types": "tsc --declaration true --emitDeclarationOnly --outDir types --rootDir src --noEmit false",
+		"build": "run-p build:*",
+		"fmt": "prettier  --write --list-different \"{*,{src,examples}/**/*,.github/**/*}.+(ts|json|yml|md)\"",
+		"typecheck": "tsc --noEmit"
+	},
+	"prettier": {
+		"proseWrap": "always",
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "all",
+		"useTabs": true,
+		"overrides": [
+			{
+				"files": [
+					"*.md",
+					"*.yml"
+				],
+				"options": {
+					"printWidth": 120,
+					"tabWidth": 2,
+					"useTabs": false
+				}
+			}
+		]
+	},
+	"dependencies": {
+		"diary": "^0.2.0"
+	},
+	"volta": {
+		"node": "16.2.0"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^2.2.2",
+		"@marais/tsconfig": "0.0.1",
+		"esbuild": "^0.12.25",
+		"npm-run-all": "^4.1.5",
+		"prettier": "2.3.2",
+		"typescript": "4.4.2"
+	}
+}
