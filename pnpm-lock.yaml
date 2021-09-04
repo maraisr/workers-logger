@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@cloudflare/workers-types': ^2.2.2
+  '@cloudflare/workers-types': 2.2.2
   '@marais/tsconfig': 0.0.1
   diary: ^0.2.0
   prettier: 2.3.2
