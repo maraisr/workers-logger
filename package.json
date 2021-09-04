@@ -1,6 +1,6 @@
 {
 	"name": "workers-logger",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "A fast and effective logging framework for Cloudflare Workers",
 	"keywords": [
 		"logging",
