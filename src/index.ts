@@ -1,5 +1,5 @@
-import type { Diary, LogEvent } from 'diary';
 import { diary } from 'diary';
+import type { Diary, LogEvent } from 'diary';
 
 export { sprintf as format } from 'diary/utils';
 
@@ -18,9 +18,9 @@ export const track = (req: Request, name?: string, reporter?: Reporter) => {
 	const $ = diary(name || '', (event) => void queue.push(event)) as Tracker;
 
 	$.report = (res) => {
-		if (!queue.length || typeof reporter !== 'function') return;
-
-		return reporter(queue, { req, res });
+		if (queue.length && typeof reporter === 'function') {
+			return reporter(queue, { req, res });
+		}
 	};
 
 	return $;
