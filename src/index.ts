@@ -1,5 +1,5 @@
-import type { Diary, LogEvent } from 'diary';
 import { diary } from 'diary';
+import type { Diary, LogEvent } from 'diary';
 
 export { sprintf as format } from 'diary/utils';
 
