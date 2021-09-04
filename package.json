@@ -36,26 +36,6 @@
 		"fmt": "prettier  --write --list-different \"{*,{src,examples}/**/*,.github/**/*}.+(ts|json|yml|md)\"",
 		"typecheck": "tsc --noEmit"
 	},
-	"prettier": {
-		"proseWrap": "always",
-		"singleQuote": true,
-		"tabWidth": 4,
-		"trailingComma": "all",
-		"useTabs": true,
-		"overrides": [
-			{
-				"files": [
-					"*.md",
-					"*.yml"
-				],
-				"options": {
-					"printWidth": 120,
-					"tabWidth": 2,
-					"useTabs": false
-				}
-			}
-		]
-	},
 	"dependencies": {
 		"diary": "^0.2.0"
 	},
