@@ -4,6 +4,8 @@ import type { Diary, LogEvent } from 'diary';
 export { sprintf as format } from 'diary/utils';
 export { enable } from 'diary';
 
+export type { LogEvent, LogLevels } from 'diary';
+
 export type Reporter = (
 	events: LogEvent[],
 	context: { req: Request; res: Response },
