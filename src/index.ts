@@ -2,13 +2,14 @@ import { diary } from 'diary';
 import type { Diary, LogEvent } from 'diary';
 
 export { sprintf as format } from 'diary/utils';
+export { enable } from 'diary';
 
 export type Reporter = (
 	events: LogEvent[],
 	context: { req: Request; res: Response },
 ) => Promise<any> | void;
 
-interface Tracker extends Diary {
+export interface Tracker extends Diary {
 	report(response: Response): Promise<any> | void | undefined;
 }
 

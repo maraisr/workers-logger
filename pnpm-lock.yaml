@@ -3,22 +3,22 @@ lockfileVersion: 5.3
 specifiers:
   '@cloudflare/workers-types': 2.2.2
   '@marais/tsconfig': 0.0.1
-  diary: ^0.2.0
-  prettier: 2.3.2
+  diary: ^0.2.1
+  prettier: 2.4.0
   rollup: 2.56.3
   rollup-plugin-dts: 4.0.0
-  typescript: 4.4.2
+  typescript: 4.4.3
 
 dependencies:
-  diary: 0.2.0
+  diary: 0.2.1
 
 devDependencies:
   '@cloudflare/workers-types': 2.2.2
   '@marais/tsconfig': 0.0.1
-  prettier: 2.3.2
+  prettier: 2.4.0
   rollup: 2.56.3
-  rollup-plugin-dts: 4.0.0_rollup@2.56.3+typescript@4.4.2
-  typescript: 4.4.2
+  rollup-plugin-dts: 4.0.0_rollup@2.56.3+typescript@4.4.3
+  typescript: 4.4.3
 
 packages:
 
@@ -85,8 +85,8 @@ packages:
     dev: true
     optional: true
 
-  /diary/0.2.0:
-    resolution: {integrity: sha512-oovpikb0P+BZDSb+sFr6BYGuYRCvj0qHI6vQTMOAlAQzOL6OFYMRHz12jMqVabN2DtSEWNAucqg7hkweYcQ/xA==}
+  /diary/0.2.1:
+    resolution: {integrity: sha512-6hWuTPgFnZ6iThfYQMK/dRPFEUouTEXAOUW7uv3OI8D5AYZwkvsaAf68AXt1C5qr9eEcXUZtwggp/CscuU4qQA==}
     dev: false
 
   /escape-string-regexp/1.0.5:
@@ -120,13 +120,13 @@ packages:
       sourcemap-codec: 1.4.8
     dev: true
 
-  /prettier/2.3.2:
-    resolution: {integrity: sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==}
+  /prettier/2.4.0:
+    resolution: {integrity: sha512-DsEPLY1dE5HF3BxCRBmD4uYZ+5DCbvatnolqTqcxEgKVZnL2kUfyu7b8pPQ5+hTBkdhU9SLUmK0/pHb07RE4WQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
 
-  /rollup-plugin-dts/4.0.0_rollup@2.56.3+typescript@4.4.2:
+  /rollup-plugin-dts/4.0.0_rollup@2.56.3+typescript@4.4.3:
     resolution: {integrity: sha512-tgUC8CxVgtlLDVloUEA9uACVaxjJHuYxlDSTp1LdCexA0bJx+RuMi45RjdLG9RTCgZlV5YBh3O7P2u6dS1KlnA==}
     engines: {node: '>=v12.22.5'}
     peerDependencies:
@@ -135,7 +135,7 @@ packages:
     dependencies:
       magic-string: 0.25.7
       rollup: 2.56.3
-      typescript: 4.4.2
+      typescript: 4.4.3
     optionalDependencies:
       '@babel/code-frame': 7.14.5
     dev: true
@@ -160,8 +160,8 @@ packages:
     dev: true
     optional: true
 
-  /typescript/4.4.2:
-    resolution: {integrity: sha512-gzP+t5W4hdy4c+68bfcv0t400HVJMMd2+H9B7gae1nQlBzCqvrXX+6GL/b3GAgyTH966pzrZ70/fRjwAtZksSQ==}
+  /typescript/4.4.3:
+    resolution: {integrity: sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
