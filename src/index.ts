@@ -1,7 +1,7 @@
 import { diary } from 'diary';
 import type { Diary, LogEvent } from 'diary';
 
-export { sprintf as format } from 'diary/utils';
+export { sprintf as format, compare } from 'diary/utils';
 export { enable } from 'diary';
 
 export type { LogEvent, LogLevels } from 'diary';
