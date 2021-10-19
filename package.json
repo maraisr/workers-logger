@@ -36,17 +36,17 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"diary": "^0.2.1"
+		"diary": "^0.2.2"
 	},
 	"volta": {
 		"node": "16.2.0"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "2.2.2",
+		"@cloudflare/workers-types": "3.0.0",
 		"@marais/tsconfig": "0.0.1",
-		"prettier": "2.4.0",
-		"rollup": "2.56.3",
+		"prettier": "2.4.1",
+		"rollup": "2.58.0",
 		"rollup-plugin-dts": "4.0.0",
-		"typescript": "4.4.3"
+		"typescript": "4.4.4"
 	}
 }
