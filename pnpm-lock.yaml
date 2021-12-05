@@ -4,22 +4,22 @@ importers:
 
   .:
     specifiers:
-      '@cloudflare/workers-types': 3.0.0
+      '@cloudflare/workers-types': 3.2.0
       '@marais/tsconfig': 0.0.1
-      diary: ^0.2.2
-      prettier: 2.4.1
-      rollup: 2.58.0
-      rollup-plugin-dts: 4.0.0
-      typescript: 4.4.4
+      diary: ^0.3.0
+      prettier: 2.5.1
+      rollup: 2.60.2
+      rollup-plugin-dts: 4.0.1
+      typescript: 4.5.2
     dependencies:
-      diary: 0.2.2
+      diary: 0.3.0
     devDependencies:
-      '@cloudflare/workers-types': 3.0.0
+      '@cloudflare/workers-types': 3.2.0
       '@marais/tsconfig': 0.0.1
-      prettier: 2.4.1
-      rollup: 2.58.0
-      rollup-plugin-dts: 4.0.0_rollup@2.58.0+typescript@4.4.4
-      typescript: 4.4.4
+      prettier: 2.5.1
+      rollup: 2.60.2
+      rollup-plugin-dts: 4.0.1_rollup@2.60.2+typescript@4.5.2
+      typescript: 4.5.2
 
   examples:
     specifiers:
@@ -29,33 +29,33 @@ importers:
 
 packages:
 
-  /@babel/code-frame/7.15.8:
-    resolution: {integrity: sha512-2IAnmn8zbvC/jKYhq5Ki9I+DwjlrtMPUCH/CpHvqI4dNnlwHwsxoIhlc8WcYY5LSYknXQtAlFYuHfqAFCvQ4Wg==}
+  /@babel/code-frame/7.16.0:
+    resolution: {integrity: sha512-IF4EOMEV+bfYwOmNxGzSnjR2EmQod7f1UXOpZM3l4i4o4QNwzjtJAu/HxdjHq0aYBvdqMuQEY1eg0nqW9ZPORA==}
     engines: {node: '>=6.9.0'}
     requiresBuild: true
     dependencies:
-      '@babel/highlight': 7.14.5
+      '@babel/highlight': 7.16.0
     dev: true
     optional: true
 
-  /@babel/helper-validator-identifier/7.14.9:
-    resolution: {integrity: sha512-pQYxPY0UP6IHISRitNe8bsijHex4TWZXi2HwKVsjPiltzlhse2znVcm9Ace510VT1kxIHjGJCZZQBX2gJDbo0g==}
+  /@babel/helper-validator-identifier/7.15.7:
+    resolution: {integrity: sha512-K4JvCtQqad9OY2+yTU8w+E82ywk/fe+ELNlt1G8z3bVGlZfn/hOcQQsUhGhW/N+tb3fxK800wLtKOE/aM0m72w==}
     engines: {node: '>=6.9.0'}
     dev: true
     optional: true
 
-  /@babel/highlight/7.14.5:
-    resolution: {integrity: sha512-qf9u2WFWVV0MppaL877j2dBtQIDgmidgjGk5VIMw3OadXvYaXn66U1BFlH2t4+t3i+8PhedppRv+i40ABzd+gg==}
+  /@babel/highlight/7.16.0:
+    resolution: {integrity: sha512-t8MH41kUQylBtu2+4IQA3atqevA2lRgqA2wyVB/YiWmsDSuylZZuXOUy9ric30hfzauEFfdsuk/eXTRrGrfd0g==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/helper-validator-identifier': 7.14.9
+      '@babel/helper-validator-identifier': 7.15.7
       chalk: 2.4.2
       js-tokens: 4.0.0
     dev: true
     optional: true
 
-  /@cloudflare/workers-types/3.0.0:
-    resolution: {integrity: sha512-RsasworfxdRyZC2iBN2Okgziydaq52uTStENePdH2JTmoA0bki53jOchvznk+ezu34WyXQLDpk4ogGyQ6BSVkw==}
+  /@cloudflare/workers-types/3.2.0:
+    resolution: {integrity: sha512-y0+f7QeB5/fMMdU0wSwvBB18yE9kAD2s7Wben8a4uI4f/EJyE+eJrai5QO52Pq8EmWP0vRpKqZh0qU857WhY2A==}
     dev: true
 
   /@marais/tsconfig/0.0.1:
@@ -92,8 +92,8 @@ packages:
     dev: true
     optional: true
 
-  /diary/0.2.2:
-    resolution: {integrity: sha512-mQed0V4cTAT8VHkvbEYArVwCqYBdrzbx+UzY/wl6/1Hyl4ubOAMvTRG5cV5QIJuPPhuI0PRg3IriWpdon7amHQ==}
+  /diary/0.3.0:
+    resolution: {integrity: sha512-Z4HGQ6c7/g/nHlUUO6/PfH/ukOa79Lp2yWrAbN2qfWfCSwSh/30/VHR1InqV8UvvTfxgp9AjgQRTSYiNkyaVSg==}
     dev: false
 
   /escape-string-regexp/1.0.5:
@@ -127,28 +127,28 @@ packages:
       sourcemap-codec: 1.4.8
     dev: true
 
-  /prettier/2.4.1:
-    resolution: {integrity: sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==}
+  /prettier/2.5.1:
+    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
 
-  /rollup-plugin-dts/4.0.0_rollup@2.58.0+typescript@4.4.4:
-    resolution: {integrity: sha512-tgUC8CxVgtlLDVloUEA9uACVaxjJHuYxlDSTp1LdCexA0bJx+RuMi45RjdLG9RTCgZlV5YBh3O7P2u6dS1KlnA==}
-    engines: {node: '>=v12.22.5'}
+  /rollup-plugin-dts/4.0.1_rollup@2.60.2+typescript@4.5.2:
+    resolution: {integrity: sha512-DNv5F8pro/r0Hkx3JWKRtJZocDnqXfgypoajeiaNq134rYaFcEIl/oas5PogD1qexMadVijsHyVko1Chig0OOQ==}
+    engines: {node: '>=v12.22.6'}
     peerDependencies:
       rollup: ^2.56.3
       typescript: ^4.4.2
     dependencies:
       magic-string: 0.25.7
-      rollup: 2.58.0
-      typescript: 4.4.4
+      rollup: 2.60.2
+      typescript: 4.5.2
     optionalDependencies:
-      '@babel/code-frame': 7.15.8
+      '@babel/code-frame': 7.16.0
     dev: true
 
-  /rollup/2.58.0:
-    resolution: {integrity: sha512-NOXpusKnaRpbS7ZVSzcEXqxcLDOagN6iFS8p45RkoiMqPHDLwJm758UF05KlMoCRbLBTZsPOIa887gZJ1AiXvw==}
+  /rollup/2.60.2:
+    resolution: {integrity: sha512-1Bgjpq61sPjgoZzuiDSGvbI1tD91giZABgjCQBKM5aYLnzjq52GoDuWVwT/cm/MCxCMPU8gqQvkj8doQ5C8Oqw==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -167,8 +167,8 @@ packages:
     dev: true
     optional: true
 
-  /typescript/4.4.4:
-    resolution: {integrity: sha512-DqGhF5IKoBl8WNf8C1gu8q0xZSInh9j1kJJMqT3a94w1JzVaBU4EXOSMrz9yDqMT0xt3selp83fuFMQ0uzv6qA==}
+  /typescript/4.5.2:
+    resolution: {integrity: sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
