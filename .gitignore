@@ -12,7 +12,6 @@ node_modules
 /.idea
 /.vscode
 
-# Code
 /index.js
 /index.mjs
 /index.d.ts

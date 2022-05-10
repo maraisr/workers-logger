@@ -32,14 +32,11 @@
 	],
 	"scripts": {
 		"build": "rollup -c",
-		"fmt": "prettier  --write --list-different \"{*,{src,examples}/**/*,.github/**/*}.+(ts|json|yml|md)\"",
+		"format": "prettier  --write --list-different \"{*,{src,examples}/**/*,.github/**/*}.+(ts|json|yml|md)\"",
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
 		"diary": "^0.3.0"
-	},
-	"volta": {
-		"node": "16.2.0"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "3.9.0",
@@ -48,5 +45,8 @@
 		"rollup": "2.72.1",
 		"rollup-plugin-dts": "4.2.1",
 		"typescript": "4.6.4"
+	},
+	"volta": {
+		"node": "16.2.0"
 	}
 }
