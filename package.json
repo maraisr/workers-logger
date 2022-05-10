@@ -1,6 +1,6 @@
 {
 	"name": "workers-logger",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "A fast and effective logging framework for Cloudflare Workers",
 	"keywords": [
 		"logging",
@@ -31,7 +31,7 @@
 		"index.d.ts"
 	],
 	"scripts": {
-		"build": "rollup -c",
+		"build": "bundt --minify",
 		"format": "prettier  --write --list-different \"{*,{src,examples}/**/*,.github/**/*}.+(ts|json|yml|md)\"",
 		"typecheck": "tsc --noEmit"
 	},
@@ -39,11 +39,9 @@
 		"diary": "^0.3.0"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "3.9.0",
 		"@marais/tsconfig": "0.0.3",
+		"bundt": "2.0.0-next.5",
 		"prettier": "2.6.2",
-		"rollup": "2.72.1",
-		"rollup-plugin-dts": "4.2.1",
 		"typescript": "4.6.4"
 	},
 	"volta": {

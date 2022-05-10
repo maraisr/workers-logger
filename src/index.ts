@@ -1,19 +1,10 @@
 import { diary } from 'diary';
-import type { Diary, LogEvent } from 'diary';
+import type { LogEvent } from 'diary';
+
+import type { Tracker, Reporter } from 'workers-logger';
 
 export { sprintf as format, compare } from 'diary/utils';
 export { enable } from 'diary';
-
-export type { LogEvent, LogLevels } from 'diary';
-
-export type Reporter = (
-	events: LogEvent[],
-	context: { req: Request; res: Response },
-) => Promise<any> | void;
-
-export interface Tracker extends Diary {
-	report(response: Response): Promise<any> | void | undefined;
-}
 
 export const track = (req: Request, name?: string, reporter?: Reporter) => {
 	const queue: LogEvent[] = [];
