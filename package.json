@@ -9,11 +9,7 @@
 	],
 	"repository": "maraisr/workers-logger",
 	"license": "MIT",
-	"author": {
-		"name": "Marais Rossouw",
-		"email": "me@marais.dev",
-		"url": "https://marais.io"
-	},
+	"author": "Marais Rossow <me@marais.dev> (https://marais.io)",
 	"sideEffects": false,
 	"exports": {
 		".": {
@@ -36,15 +32,15 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"diary": "^0.3.0"
+		"diary": "^0.4.4"
 	},
 	"devDependencies": {
-		"@marais/tsconfig": "0.0.3",
+		"@marais/tsconfig": "0.0.4",
 		"bundt": "2.0.0-next.5",
-		"prettier": "2.6.2",
-		"typescript": "4.6.4"
+		"prettier": "2.8.8",
+		"typescript": "5.1.3"
 	},
 	"volta": {
-		"node": "16.2.0"
+		"node": "18.16.1"
 	}
 }
