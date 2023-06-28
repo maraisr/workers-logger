@@ -1,12 +1,11 @@
 {
 	"extends": "@marais/tsconfig",
 	"compilerOptions": {
-		"target": "esnext",
-		"lib": ["esnext", "dom.iterable", "webworker"],
+		"baseUrl": ".",
 		"paths": {
-			"workers-logger": ["./src/index.d.ts"]
+			"workers-logger": ["src/index.d.ts"]
 		}
 	},
-	"include": ["src"],
+	"include": ["src", "test"],
 	"exclude": ["node_modules"]
 }
