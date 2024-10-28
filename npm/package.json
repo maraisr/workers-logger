@@ -1,0 +1,28 @@
+{
+	"name": "workers-logger",
+	"version": "0.2.0",
+	"repository": "maraisr/workers-logger",
+	"description": "A fast and effective logging framework for Cloudflare Workers",
+	"license": "MIT",
+	"author": "Marais Rossow <me@marais.dev> (https://marais.io)",
+	"keywords": [
+		"logging",
+		"tracing",
+		"workers"
+	],
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"import": "./index.mjs",
+			"require": "./index.js",
+			"types": "./index.d.ts"
+		},
+		"./package.json": "./package.json"
+	},
+	"main": "index.js",
+	"module": "index.mjs",
+	"types": "index.d.ts",
+	"dependencies": {
+		"diary": "^0.4.4"
+	}
+}
